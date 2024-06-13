@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+@layer components {
+  .primaryDefaultButton {
+    @apply flex items-center bg-[#203A4C] min-w-[200px] p-4 ;
+  }
+
+  .primaryDefaultButton img {
+    @apply w-[16px] h-[12px];
+  }
+
+  .primaryDefaultButton p {
+    @apply font-sans text-white text-[12px] tracking-[2px] pl-16;
+  }
+  .primaryHoverButton {
+    @apply flex items-center bg-[#5FB4A2] min-w-[200px] p-4 ;
+  }
+  .primaryDisabledButton {
+    @apply flex items-center bg-[#979797] min-w-[200px] p-4 ;
+  }
+
+  .secondaryDefaultButton{
+    @apply bg-[#FFFFFF] border-2 border-[#33323D] min-w-[200px] p-4
+  }
+  .secondaryHoverButton{
+    @apply bg-[#33323D] border-2 text-white
+  }
+  .secondaryDisabledButton{
+    @apply border-2 border-[#979797] min-w-[200px] p-4
+  }
+}
