@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import NotFound from "./NotFound";
 import Layout from "./Layout";
 import PortfolioDetail from "./components/Portfolio/PortfolioDetail/PortfolioDetail";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const { pathname } = useLocation();
@@ -24,7 +25,8 @@ function App() {
             index
             path="/portfolio/:slug"
             element={<PortfolioDetail />}
-          ></Route>
+          ></Route>{" "}
+          <Route index path="/contact" element={<Contact />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Route>
       </Routes>

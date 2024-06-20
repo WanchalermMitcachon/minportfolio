@@ -20,7 +20,10 @@ function Footer() {
         {" "}
         <p>PORTFOLIO</p>
       </Link>
-      <p>CONTACT ME</p>
+      <Link to="contact">
+        {" "}
+        <p>CONTACT ME</p>
+      </Link>
       <div className="flex space-x-4 py-2">
         <img src={githubWhite} alt="" />
         <img src={linkinWhite} alt="" />

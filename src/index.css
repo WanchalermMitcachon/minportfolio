@@ -18,7 +18,7 @@ main {
 
 @layer components {
   .primaryDefaultButton {
-    @apply flex items-center bg-[#203A4C] min-w-[200px] p-4 ;
+    @apply flex items-center bg-[#203A4C] min-w-[200px] p-4;
   }
 
   .primaryDefaultButton img {
@@ -29,19 +29,38 @@ main {
     @apply font-sans text-white text-[12px] tracking-[2px] pl-16;
   }
   .primaryHoverButton {
-    @apply flex items-center bg-[#5FB4A2] min-w-[200px] p-4 ;
+    @apply flex items-center bg-[#5FB4A2] min-w-[200px] p-4;
   }
   .primaryDisabledButton {
-    @apply flex items-center bg-[#979797] min-w-[200px] p-4 ;
+    @apply flex items-center bg-[#979797] min-w-[200px] p-4;
   }
 
-  .secondaryDefaultButton{
-    @apply bg-[#FFFFFF] border-2 border-[#33323D] min-w-[200px] p-4 
+  .secondaryDefaultButton {
+    @apply bg-[#FFFFFF] border-2 border-[#33323D] min-w-[200px] p-4;
   }
-  .secondaryHoverButton{
-    @apply bg-[#33323D] border-2 text-white
+  .secondaryHoverButton {
+    @apply bg-[#33323D] border-2 text-white;
   }
-  .secondaryDisabledButton{
-    @apply border-2 border-[#979797] min-w-[200px] p-4
+  .secondaryDisabledButton {
+    @apply border-2 border-[#979797] min-w-[200px] p-4;
+  }
+
+  .textFieldNormalState {
+    @apply bg-[#979797]/25 w-full p-4 placeholder:text-[#33323D]/40 
+    placeholder:text-[13px] placeholder:leading-[30px] outline-none;
+  }
+  .textFieldActiveState {
+    @apply border-2 border-[#5FB4A2];
+  }
+  .textFieldErrorState {
+    @apply  border-2 border-[#F43030];
+  }
+  .textAreaNormalState {
+    @apply bg-[#979797]/25 w-full p-4 placeholder:text-[#33323D]/40 
+    placeholder:text-[13px] placeholder:leading-[30px] min-h-[96px] outline-none
+    ;
+  }
+  .textAreaActiveState {
+    @apply border-2 border-[#5FB4A2];
   }
 }
