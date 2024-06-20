@@ -15,7 +15,7 @@ function NavBox({ isOpen, navBoxRef }) {
         <p>Home</p>
       </Link>
       <Link to="portfolio">
-        <p>PORTFOLIO</p>
+        <p>PORTFOLIOxxx</p>
       </Link>
       <Link to="contact">
         <p>CONTACT ME</p>
