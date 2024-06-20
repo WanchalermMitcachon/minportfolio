@@ -36,7 +36,7 @@ main {
   }
 
   .secondaryDefaultButton{
-    @apply bg-[#FFFFFF] border-2 border-[#33323D] min-w-[200px] p-4
+    @apply bg-[#FFFFFF] border-2 border-[#33323D] min-w-[200px] p-4 
   }
   .secondaryHoverButton{
     @apply bg-[#33323D] border-2 text-white
