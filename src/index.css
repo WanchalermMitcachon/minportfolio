@@ -16,6 +16,12 @@ main {
   flex: 1;
 }
 
+/* active path */
+.active-class {
+  font-weight: 700;
+  color: #5FB4A2;
+}
+
 @layer components {
   .primaryDefaultButton {
     @apply flex items-center bg-[#203A4C] min-w-[200px] p-4;
@@ -53,12 +59,11 @@ main {
     @apply border-2 border-[#5FB4A2];
   }
   .textFieldErrorState {
-    @apply  border-2 border-[#F43030];
+    @apply border-2 border-[#F43030];
   }
   .textAreaNormalState {
     @apply bg-[#979797]/25 w-full p-4 placeholder:text-[#33323D]/40 
-    placeholder:text-[13px] placeholder:leading-[30px] min-h-[96px] outline-none
-    ;
+    placeholder:text-[13px] placeholder:leading-[30px] min-h-[96px] outline-none;
   }
   .textAreaActiveState {
     @apply border-2 border-[#5FB4A2];

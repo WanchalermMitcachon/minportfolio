@@ -9,7 +9,7 @@ function Portfolio() {
       <section className="mt-10">
         <h1 className="sr-only">My portfolio</h1>
 
-        {data.map((project) => (
+        {data.map((project, idx) => (
           <PortfolioItem key={project.id} item={project} />
         ))}
       </section>

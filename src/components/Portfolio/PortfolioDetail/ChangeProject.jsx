@@ -14,7 +14,7 @@ export default function ChangeProject({ previousProject, nextProject }) {
       {previousProject && (
         <Link
           to={`/portfolio/${previousProject.slug}`}
-          className="flex flex-col items-start "
+          className="flex flex-col items-start md:flex-row md:items-center md:space-x-8"
         >
           <img
             src={arrowLeft}
@@ -33,13 +33,13 @@ export default function ChangeProject({ previousProject, nextProject }) {
       {nextProject && (
         <Link
           to={`/portfolio/${nextProject.slug}`}
-          className="flex flex-col items-end gap-4 gap-4 "
+          className="flex flex-col items-end gap-4 gap-4  md:flex-row-reverse md:items-center "
         >
           <img
             src={arrowRight}
             alt="Arrow right"
             aria-hidden="true"
-            className=""
+            className="ml-5"
           />
           <div className="text-right mr-1">
             <p className="font-heading font-nova  text-h3 leading-h3 tracking-h3">

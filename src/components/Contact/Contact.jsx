@@ -6,7 +6,7 @@ import FormContact from "./FormContact";
 function Contact() {
   return (
     <div>
-      <hr className="mt-10  w-full " />
+      <hr className="mt-10  w-full  md:mt-24" />
       <h1
         className="my-8 font-nova font-bold text-h2 leading-h2 tracking-h2
       "
