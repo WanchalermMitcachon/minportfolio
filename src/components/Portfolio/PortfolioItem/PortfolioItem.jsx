@@ -1,11 +1,15 @@
 import imagePortfolioManageMobile from "/assets/portfolio/mobile/image-portfolio-manage.jpg";
 import imagePortfolioManageTablet from "/assets/portfolio/tablet/image-portfolio-manage.jpg";
+import imagePortfolioManageDesktop from "/assets/portfolio/desktop/image-portfolio-manage.jpg";
 import imagePortfolioBookmarkMobile from "/assets/portfolio/mobile/image-portfolio-bookmark@2x.jpg";
 import imagePortfolioBookmarkTablet from "/assets/portfolio/tablet/image-portfolio-bookmark@2x.jpg";
+import imagePortfolioBookmarkDesktop from "/assets/portfolio/desktop/image-portfolio-bookmark@2x.jpg";
 import imagePortfolioInsureMobile from "/assets/portfolio/mobile/image-portfolio-insure@2x.jpg";
 import imagePortfolioInsureTablet from "/assets/portfolio/tablet/image-portfolio-insure@2x.jpg";
+import imagePortfolioInsureDesktop from "/assets/portfolio/desktop/image-portfolio-insure@2x.jpg";
 import imagePortfolioFyloMobile from "/assets/portfolio/mobile/image-portfolio-fylo@2x.jpg";
 import imagePortfolioFyloTablet from "/assets/portfolio/tablet/image-portfolio-fylo@2x.jpg";
+import imagePortfolioFyloDesktop from "/assets/portfolio/desktop/image-portfolio-fylo@2x.jpg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 export default function PortfolioItem({ item }) {
@@ -30,6 +34,13 @@ export default function PortfolioItem({ item }) {
           imagePortfolioFylo: imagePortfolioFyloMobile,
         });
         // console.log("imageTablet", imagesMap);
+      } else if (window.innerWidth >= 1281) {
+        setImageMap({
+          imagePortfolioManage: imagePortfolioManageDesktop,
+          imagePortfolioBookmark: imagePortfolioBookmarkDesktop,
+          imagePortfolioInsure: imagePortfolioInsureDesktop,
+          imagePortfolioFylo: imagePortfolioFyloDesktop,
+        });
       }
     };
 
@@ -47,7 +58,7 @@ export default function PortfolioItem({ item }) {
         id % 2 === 0 ? "md:flex-row-reverse	" : "md:space-x-10"
       }  `}
     >
-      <div className="md:flex-1 md:py-8 md:flex">
+      <div className="md:flex-1 md:py-8 md:flex lg:py-0">
         <img
           src={thumbnailImage}
           alt={name}
@@ -58,7 +69,7 @@ export default function PortfolioItem({ item }) {
       <div
         className={`md:flex-1 md:flex md:flex-col md:border-y-2  md:py-20  md:my-auto ${
           id % 2 === 0 ? "md:mr-10	" : ""
-        } `}
+        } lg:justify-start lg:items-start  lg:py-28`}
       >
         <p className="font-nova font-bold text-h2 leading-h2 tracking-h2 ">
           {name}

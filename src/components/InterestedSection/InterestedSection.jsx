@@ -10,9 +10,9 @@ function InterestedSection() {
         className="font-nova font-bold text-h2 leading-h2 tracking-h2 text-center mb-12
        md:text-start "
       >
-        Interested in doing a project together
+        Interested in doing a project together?
       </p>
-      <hr className="hidden md:flex " />
+      <hr className="hidden md:flex lg:translate-y-[-15px]" />
       <button className="secondaryDefaultButton hover:secondaryHoverButton md:max-w-[162px]">
         <p className="text-[12px] tracking-[2px]">CONTACT ME</p>
       </button>

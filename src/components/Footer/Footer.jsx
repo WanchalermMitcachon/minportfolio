@@ -11,10 +11,12 @@ function Footer() {
       className="w-screen bg-[#33323D] mx-auto
      "
     >
-      <div className="py-14 md:flex md:justify-between md:max-w-[1050px] md:px-8 md:mx-auto  ">
+      <div className="py-14 md:flex md:justify-between md:max-w-[1050px] md:px-8 md:mx-auto   ">
         <div
           className="flex flex-col items-center justify-center 
-    text-[#FFFFFF] mb-10 mt-4 space-y-7  md:flex-row md:space-x-8 md:items-center"
+    text-[#FFFFFF] mb-10 mt-4 space-y-7  md:flex-row md:space-x-8 md:items-center md:space-y-0 
+    
+    "
         >
           <img src={logoWhite} alt="logoWhite" />
           <Link to="">
