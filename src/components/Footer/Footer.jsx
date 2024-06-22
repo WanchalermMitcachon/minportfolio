@@ -10,7 +10,7 @@ function Footer() {
     <div
       className="w-screen bg-[#33323D] flex flex-col items-center justify-center 
     text-[#FFFFFF] py-14 mt-4 space-y-7
-     md:flex-row md:items-center md:justify-between md:space-x-16 md:px-10 md:space-y-0"
+     md:flex-row md:items-center md:justify-between md:space-x-16 md:px-10 md:space-y-0 lg:px-44"
     >
       <div className="md:flex md:space-x-8 md:items-center">
         <img src={logoWhite} alt="logoWhite" />
@@ -28,9 +28,9 @@ function Footer() {
         </Link>
       </div>
       <div className="flex space-x-4 py-2 md:space-x-6 md:items-center md:py-0">
-        <img src={githubWhite} alt="" className="cursor-pointer"/>
-        <img src={linkinWhite} alt="" className="cursor-pointer"/>
-        <img src={twitterWhite} alt="" className="cursor-pointer"/>
+        <img src={githubWhite} alt="" className="cursor-pointer" />
+        <img src={linkinWhite} alt="" className="cursor-pointer" />
+        <img src={twitterWhite} alt="" className="cursor-pointer" />
       </div>
     </div>
   );

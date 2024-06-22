@@ -19,6 +19,8 @@ function HeroSection() {
       setHeroImag(heroImgTablet);
     } else if (window.innerWidth < 768) {
       setHeroImag(heroImgMobile);
+    } else if (window.innerWidth >= 1281) {
+      setHeroImag(heroImgDesktop);
     }
   };
 
@@ -27,14 +29,20 @@ function HeroSection() {
       <img className="w-full md:h-[50%] mb-7" src={heroImg} alt="heroImg" />
       <div
         className="md:absolute md:bg-white  md:pt-20 md:pr-24
-      md:w-[550px]  bottom-0"
+      md:w-[550px] md:left-[-1px] md:bottom-0 
+      lg:pt-[6%] lg:pr-6 lg:w-[415px] lg:pt-10"
       >
-        <p className="font-nova font-bold text-h2 leading-h2 tracking-h2">
+        <p
+          className="font-nova font-bold text-h2 leading-h2 tracking-h2
+        lg:text-h1 lg:leading-h1 lg:tracking-h1"
+        >
           Hey, I’m Alex Spencer and I love building beautiful websites{" "}
         </p>
-        <button className="primaryDefaultButton hover:primaryHoverButton group my-8
+        <button
+          className="primaryDefaultButton hover:primaryHoverButton group my-8
         md:my-0 md:mt-12
-        ">
+        "
+        >
           <img
             src={downsHoverArrows}
             alt="downsArrow hover:hidden"
