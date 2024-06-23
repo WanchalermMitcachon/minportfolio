@@ -5,7 +5,7 @@ import heroImgDesktop from "/assets/homepage/desktop/image-homepage-hero@2x.jpg"
 import downsArrows from "/assets/icons/down-arrows.svg";
 import downsHoverArrows from "/assets/icons/down-hover-arrows.svg";
 
-function HeroSection() {
+function HeroSection({goToAbout}) {
   const [heroImg, setHeroImag] = useState(heroImgMobile);
 
   useEffect(() => {
@@ -42,6 +42,7 @@ function HeroSection() {
           className="primaryDefaultButton hover:primaryHoverButton group my-8
         md:my-0 md:mt-12
         "
+        onClick={goToAbout}
         >
           <img
             src={downsHoverArrows}

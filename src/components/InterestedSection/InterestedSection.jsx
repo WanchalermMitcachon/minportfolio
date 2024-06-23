@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function InterestedSection() {
   return (
@@ -13,9 +14,11 @@ function InterestedSection() {
         Interested in doing a project together?
       </p>
       <hr className="hidden md:flex lg:translate-y-[-15px]" />
-      <button className="secondaryDefaultButton hover:secondaryHoverButton md:max-w-[162px]">
-        <p className="text-[12px] tracking-[2px]">CONTACT ME</p>
-      </button>
+      <Link to="/contact">
+        <button className="secondaryDefaultButton hover:secondaryHoverButton md:max-w-[162px]">
+          <p className="text-[12px] tracking-[2px]">CONTACT ME</p>
+        </button>
+      </Link>
     </div>
   );
 }

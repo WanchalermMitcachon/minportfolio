@@ -1,20 +1,35 @@
 import React, { useEffect, useState } from "react";
 import imageBookmarkPreview1Mobile from "/assets/detail/mobile/image-bookmark-preview-1.jpg";
-import imageBookmarkPreview1Tablet from "/assets/detail/mobile/image-bookmark-preview-1.jpg";
+import imageBookmarkPreview1Tablet from "/assets/detail/tablet/image-bookmark-preview-1.jpg";
+import imageBookmarkPreview1Desktop from "/assets/detail/desktop/image-bookmark-preview-1.jpg";
+
 import imageBookmarkPreview2Mobile from "/assets/detail/mobile/image-bookmark-preview-2.jpg";
-import imageBookmarkPreview2Tablet from "/assets/detail/mobile/image-bookmark-preview-2.jpg";
+import imageBookmarkPreview2Tablet from "/assets/detail/tablet/image-bookmark-preview-2.jpg";
+import imageBookmarkPreview2Desktop from "/assets/detail/desktop/image-bookmark-preview-2.jpg";
+
 import imageFyloPreview1Mobile from "/assets/detail/mobile/image-fylo-preview-1.jpg";
 import imageFyloPreview1Tablet from "/assets/detail/tablet/image-fylo-preview-1.jpg";
+import imageFyloPreview1Desktop from "/assets/detail/desktop/image-fylo-preview-1.jpg";
+
 import imageFyloPreview2Mobile from "/assets/detail/mobile/image-fylo-preview-2.jpg";
 import imageFyloPreview2Tablet from "/assets/detail/tablet/image-fylo-preview-2.jpg";
+import imageFyloPreview2Desktop from "/assets/detail/desktop/image-fylo-preview-2.jpg";
+
 import imageInsurePreview1Mobile from "/assets/detail/mobile/image-insure-preview-1.jpg";
 import imageInsurePreview1Tablet from "/assets/detail/tablet/image-insure-preview-1.jpg";
+import imageInsurePreview1Desktop from "/assets/detail/desktop/image-insure-preview-1.jpg";
+
 import imageInsurePreview2Mobile from "/assets/detail/mobile/image-insure-preview-2.jpg";
 import imageInsurePreview2Tablet from "/assets/detail/tablet/image-insure-preview-2.jpg";
+import imageInsurePreview2Desktop from "/assets/detail/desktop/image-insure-preview-2.jpg";
+
 import imageManagePreview1Mobile from "/assets/detail/mobile/image-manage-preview-1.jpg";
 import imageManagePreview1Tablet from "/assets/detail/tablet/image-manage-preview-1.jpg";
+import imageManagePreview1Desktop from "/assets/detail/desktop/image-manage-preview-1.jpg";
+
 import imageManagePreview2Mobile from "/assets/detail/mobile/image-manage-preview-2.jpg";
 import imageManagePreview2Tablet from "/assets/detail/tablet/image-manage-preview-2.jpg";
+import imageManagePreview2Desktop from "/assets/detail/desktop/image-manage-preview-2.jpg";
 
 function StaticPreviews({ previewImg }) {
   const [previewImages, setPreviewImages] = useState({});
@@ -45,6 +60,17 @@ function StaticPreviews({ previewImg }) {
           "image-manage-preview-2": imageManagePreview2Mobile,
         });
         // console.log("imageTablet", imagesMap);
+      }else if(window.innerWidth >= 1281){
+        setPreviewImages({
+          "image-bookmark-preview-1": imageBookmarkPreview1Desktop,
+          "image-bookmark-preview-2": imageBookmarkPreview2Desktop,
+          "image-fylo-preview-1": imageFyloPreview1Desktop,
+          "image-fylo-preview-2": imageFyloPreview2Desktop,
+          "image-insure-preview-1": imageInsurePreview1Desktop,
+          "image-insure-preview-2": imageInsurePreview2Desktop,
+          "image-manage-preview-1": imageManagePreview1Desktop,
+          "image-manage-preview-2": imageManagePreview2Desktop,
+        });
       }
     };
 
@@ -55,7 +81,7 @@ function StaticPreviews({ previewImg }) {
 
   console.log();
   return (
-    <div className="mt-10 w-full">
+    <div className="mt-10 w-full ">
       <h1 className="font-nova text-h3 leading-h2 tracking-h3 mb-10">
         Static Previews
       </h1>
